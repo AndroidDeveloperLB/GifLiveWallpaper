@@ -52,7 +52,7 @@ class GIFWallpaperService : WallpaperService() {
             loadingThread = object : Thread() {
                 override fun run() {
                     super.run()
-                    movie = Movie.decodeStream(resources.openRawResource(R.raw.fast))
+                    movie = Movie.decodeStream(resources.openRawResource(R.raw.test))
                     if (isShutDown.get())
                         return
                     handler.post(drawGIF)
